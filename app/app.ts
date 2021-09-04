@@ -5,7 +5,7 @@ function startGame() {
 
 
 	
-	let showName: string = "Pankhur"						//strict type declaration to prevent other type 
+	let showName: string | undefined = getInput('playername')						//strict type declaration to prevent other type 
 	logName(showName)
 
 
@@ -18,9 +18,11 @@ function startGame() {
     receipt = "order1"
    // receipt = true 											//this will give compilation error as boolean can't be assign to receipt variable
 
+    postScore(2,showName)
+
 	}
 
-	function logName(name) {
+	function logName(name:string = "Default name") {
 	console.log(`Name of the person : ${name}`)
 
  	let value: any = 5
@@ -31,4 +33,19 @@ function startGame() {
 
 	function test(value:string = "TEEST") {					//Type annotation "value:string" to function
 		console.log(`Default value: ${value}`)
+	}
+
+	function getInput(elementID: string): string | undefined {												//Type annotation to function parameter example
+		const inputElement: HTMLInputElement = <HTMLInputElement>document.getElementById(elementID);
+
+		if (inputElement.value == '') {
+			return undefined
+		} else {
+			return inputElement.value
+		}
+	}
+
+	function postScore(score: number, name?: string): void {
+		const element: HTMLElement | null = document.getElementById('postedScores')				//Type annotation to function parameter example
+		element.innerText = `${score}  - ${name}`
 	}
