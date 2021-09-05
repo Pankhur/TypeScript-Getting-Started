@@ -102,3 +102,17 @@ function startGame() {
 	}
 
 
+	//Implementing  interfaces with object litreals
+	let result: Result = {
+		Playername: "Kohli",
+		score: 100,
+		trophy: "no"
+	}
+
+	let player: Player = {
+		name: "Kohli",
+		formatName: () => "Player name: ${name}"
+	}
+	
+
+

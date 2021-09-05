@@ -61,4 +61,13 @@ function filterFunc() {
         }
     });
 }
+var result = {
+    Playername: "Kohli",
+    score: 100,
+    trophy: "no"
+};
+var player = {
+    name: "Kohli",
+    formatName: function () { return "Player name: ${name}"; }
+};
 //# sourceMappingURL=app.js.map
