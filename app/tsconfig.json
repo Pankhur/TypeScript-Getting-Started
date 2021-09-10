@@ -2,6 +2,7 @@
 	"extends": "../tsconfig.base",
 	"compilerOptions": {
 		"removeComments": true,
+		"module": "system",
 		"outFile": "../js/app.js" 		//to have all js in one file including interface.js, class person.js and others in future
 	},
 	"files": [

@@ -1,5 +1,4 @@
-/// <reference path="person.ts" /> 
-/// <reference path="interface.ts" /> 
+
 
 function startGame() {
 
@@ -106,19 +105,19 @@ function startGame() {
 
 
 	//Implementing  interfaces with object litreals
-	let result: Result = {
-		Playername: "Kohli",
-		score: 100,
-		trophy: "no"
-	}
+// 	let result: Result = {
+// 		Playername: "Kohli",
+// 		score: 100,
+// 		trophy: "no"
+// 	}
 
-	let player: Player = {
-		name: "Kohli",
-		formatName: () => "Player name: ${name}"
-	}
+// 	let player: Player = {
+// 		name: "Kohli",
+// 		formatName: () => "Player name: ${name}"
+// 	}
 	
 
-//Implementing class
-let class_object: Person = new Person();
-class_object.name = 'elon musk'
-console.log("Class result: " + class_object.formatName())
+// //Implementing class
+// let class_object: Person = new Person();
+// class_object.name = 'elon musk'
+// console.log("Class result: " + class_object.formatName())
