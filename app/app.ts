@@ -1,3 +1,6 @@
+/// <reference path="person.ts" /> 
+/// <reference path="interface.ts" /> 
+
 function startGame() {
 
 	var message = document.getElementById('messages')
@@ -115,4 +118,7 @@ function startGame() {
 	}
 	
 
-
+//Implementing class
+let class_object: Person = new Person();
+class_object.name = 'elon musk'
+console.log("Class result: " + class_object.formatName())

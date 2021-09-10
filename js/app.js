@@ -1,3 +1,11 @@
+var Person = (function () {
+    function Person() {
+    }
+    Person.prototype.formatName = function () {
+        return this.name.toUpperCase();
+    };
+    return Person;
+}());
 function startGame() {
     var message = document.getElementById('messages');
     message.innerText = " Hello Typescript";
@@ -70,4 +78,7 @@ var player = {
     name: "Kohli",
     formatName: function () { return "Player name: ${name}"; }
 };
+var class_object = new Person();
+class_object.name = 'elon musk';
+console.log("Class result: " + class_object.formatName());
 //# sourceMappingURL=app.js.map
