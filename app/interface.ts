@@ -1,10 +1,10 @@
-interface Result {
+export interface Result {
 	Playername: string;
 	score: number;
 	trophy: string;
 }
 
-interface Player {
+export interface Player {
 	name: string;
 	formatName: () => string;
 }

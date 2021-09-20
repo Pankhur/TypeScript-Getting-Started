@@ -1,7 +1,6 @@
-/// <reference path="interface.ts" /> 
+import { Player } './interface'
 
-
-class Person implements Player {
+export class Person implements Player {
 	
 	name: string;
 
